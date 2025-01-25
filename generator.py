@@ -67,7 +67,8 @@ class Generator:
             
             # TODO: checks if there is any table with 2 primary keys so that property should be deleted
             # an added a composed primary key constraint with those variables
-            
+            for tablename in self.db:
+                pass
 
     def _build_models(self):
         '''
