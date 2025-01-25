@@ -64,7 +64,10 @@ class Generator:
                     first_table = '_'.join(splitted_fk[1:to_index])
                     second_table = '_'.join(splitted_fk[to_index+1:])
                     self.db[second_table][first_table +"_id"].append("ForeignKey(" + first_table + ".id)")
-
+            
+            # TODO: checks if there is any table with 2 primary keys so that property should be deleted
+            # an added a composed primary key constraint with those variables
+            
 
     def _build_models(self):
         '''

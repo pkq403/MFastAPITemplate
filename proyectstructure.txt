@@ -1,0 +1,17 @@
+├── app
+│   ├── common
+│   ├── __pycache__
+│   ├── src
+│   │   ├── api
+│   │   │   ├── controllers
+│   │   ├── config
+│   │   │   ├── db
+│   │   │   └── settings
+│   │   ├── containers
+│   │   ├── models
+│   │   ├── repositories
+│   │   ├── schemas
+│   │   ├── services
+│   │   └── utilities
+│   │       └── auth
+│   └── tests
