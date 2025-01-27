@@ -1,0 +1,6 @@
+1. Copiar los archivos estaticos (config, db_setup, etc...)
+y copiar los archivos template como un controller en el que ponga Template donde quieras
+sustituir el nombre para que te sea mas facil hacer los:
+    - controladores
+    - servicios
+    - repositorios

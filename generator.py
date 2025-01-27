@@ -166,6 +166,20 @@ class Generator:
         /api/controllers
         Also buils /api/router.py and /api/prefixes.py
         '''
+        # In order to make a default crud controller just need the table name
+        tablenames = list(self.db.keys())
+        os.makedirs(self.controllers_path, exist_ok=True)
+        for tablename in tablenames:
+            self._build_controller(tablename)
+        
+        # Build router.py and prefixes.py
+        # TODO
+        
+    @staticmethod
+    def _build_controller(tablename: str):
+        '''
+        write a controller from a tablename
+        '''
         pass
 
     def build_services(self):
